@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1#0">
+    <title>layout03</title>
+    <style>
+        body{
+            background-color: rgba(143, 51, 119, 0.3);
+        }
+        #wrapper{
+            color: aliceblue;
+            font-size: xx-large;
+            text-transform : uppercase;
+            margin: 0 auto;
+            box-sizing: border-box;
+            max-width: 1000px;
+            display: flex;
+        }
+        .side {
+            background-color: rgba(168, 132, 156, 0.7);
+            width: 20rem;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            background-color: rgb(173, 25, 146);
+            width: 50rem;
+            min-height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contents {
+            background-color: rgba(234, 11, 171, 0.6);
+            width: 50rem;
+            min-height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main{
+            width: 50rem;
+            height: auto;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        
+
+        .footer {
+            background-color: rgba(167, 100, 162, 0.5);
+            width: 50rem;
+            min-height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="side">side</div>
+        <div id="main">
+            <div class="header">header</div>
+            <div class="contents">contents
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, a dolorum. Repudiandae aut molestias sapiente in vel veritatis nisi ipsum recusandae soluta id a architecto, dolore aliquid labore ducimus voluptate.
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="footer">footer</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

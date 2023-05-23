@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body {
+            background-color: #cccccc;
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            /* border: 1px solid black;*/
+            max-width: 1200px;
+            height: 100vh;
+            margin: 0 auto;
+
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            width: 100%;
+            background-color: aqua;
+            height: 50px;
+
+        }
+
+        #footer {
+            width: 100%;
+            background-color: burlywood;
+            height: 50px;
+
+        }
+
+        #main {
+            display: flex;
+            flex-grow: 1;
+
+        }
+
+        #side {
+            width: 200px;
+            flex-shrink: 0;
+            background-color: antiquewhite;
+
+        }
+
+        #content {
+            flex-grow: 1;
+            background-color: coral;
+            display: flex;
+            flex-direction: column;
+        }
+
+      
+
+
+        #contnet>main {
+            background-color: yellow;
+            flex-grow: 1;
+        }
+
+        #contnet> nav {
+            background-color: pink;
+        }
+
+        #contnet> .copyright {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">header</div>
+        <div id="main">      
+            <div id="side">Side</div>
+            <div id="content">
+                <nav>nav</nav>
+                <main>Content</main>
+                <div class="copyright">copyright</div>
+            </div>
+        </div>        
+        <div id="footer">footer</div>
+    </div>
+
+</body>
+</html>
